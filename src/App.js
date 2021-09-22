@@ -66,7 +66,7 @@ function App() {
     setFeedback("Preparing your Twee the Bee NFT...");
     setClaimingNft(true);
     blockchain.smartContract.methods
-      .mint(blockchain.account, _amount)
+      .mint(_amount)
       .send({
         gasLimit: "285000",
         to: "0xcDcAfeb7ab3bfbB3B071Aef527FFC25BEDC6dD9b",
