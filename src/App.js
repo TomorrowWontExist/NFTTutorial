@@ -69,9 +69,9 @@ function App() {
       .mint(blockchain.account, _amount)
       .send({
         gasLimit: "285000",
-        to: "0x688db0131c807a3495c23bc1b25726a76ea31f49",
+        to: "0xcDcAfeb7ab3bfbB3B071Aef527FFC25BEDC6dD9b",
         from: blockchain.account,
-        value: blockchain.web3.utils.toWei((.02 * _amount).toString(), "ether"),
+        value: blockchain.web3.utils.toWei((.01 * _amount).toString(), "ether"),
       })
       .once("error", (err) => {
         console.log(err);
@@ -103,7 +103,7 @@ function App() {
         <s.TextTitle
           style={{ textAlign: "center", fontSize: 36, fontWeight: "bold" }}
         >
-          The Bee Collaborative NFT Minting Hive
+          TheBeeGroup5 NFT Minting Hive Pre Sale
           
         </s.TextTitle>
         <s.SpacerMedium />
@@ -114,7 +114,7 @@ function App() {
             <s.TextTitle
               style={{ textAlign: "center", fontSize: 26, fontWeight: "bold" }}
             >
-              {data.totalSupply}/10000
+              {data.totalSupply}/1000
             </s.TextTitle>
           </s.Container>
           <s.SpacerMedium />
@@ -124,7 +124,7 @@ function App() {
             ai={"center"}
             style={{ backgroundColor: "#000000", padding: 12 }}
           >
-            {Number(data.totalSupply) == 10000 ? (
+            {Number(data.totalSupply) == 1000 ? (
               <>
                 <s.TextTitle style={{ textAlign: "center" }}>
                   The sale has ended.
@@ -143,7 +143,7 @@ function App() {
             ) : (
               <>
                 <s.TextTitle style={{ textAlign: "center" }}>
-                  1 Bee NFT costs .02 ETH
+                  1 Bee NFT costs .01 ETH
                 </s.TextTitle>
                 <s.SpacerXSmall />
                 <s.TextDescription style={{ textAlign: "center" }}>
