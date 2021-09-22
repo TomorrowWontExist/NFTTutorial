@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/tbcnft/static/css/main.741ee34a.chunk.css",
-    "main.js": "/tbcnft/static/js/main.ef9012bb.chunk.js",
-    "main.js.map": "/tbcnft/static/js/main.ef9012bb.chunk.js.map",
-    "runtime-main.js": "/tbcnft/static/js/runtime-main.6e67e627.js",
-    "runtime-main.js.map": "/tbcnft/static/js/runtime-main.6e67e627.js.map",
-    "static/js/2.000a2352.chunk.js": "/tbcnft/static/js/2.000a2352.chunk.js",
-    "static/js/2.000a2352.chunk.js.map": "/tbcnft/static/js/2.000a2352.chunk.js.map",
-    "static/js/3.a64233a7.chunk.js": "/tbcnft/static/js/3.a64233a7.chunk.js",
-    "static/js/3.a64233a7.chunk.js.map": "/tbcnft/static/js/3.a64233a7.chunk.js.map",
-    "index.html": "/tbcnft/index.html",
-    "static/css/main.741ee34a.chunk.css.map": "/tbcnft/static/css/main.741ee34a.chunk.css.map",
-    "static/js/2.000a2352.chunk.js.LICENSE.txt": "/tbcnft/static/js/2.000a2352.chunk.js.LICENSE.txt",
-    "static/media/1.75f03515.png": "/tbcnft/static/media/1.75f03515.png",
-    "static/media/reset.css": "/tbcnft/static/media/PressStart2P-Regular.f2341734.woff"
+    "main.css": "/presale/static/css/main.3db758a9.chunk.css",
+    "main.js": "/presale/static/js/main.af742cb7.chunk.js",
+    "main.js.map": "/presale/static/js/main.af742cb7.chunk.js.map",
+    "runtime-main.js": "/presale/static/js/runtime-main.581c92ee.js",
+    "runtime-main.js.map": "/presale/static/js/runtime-main.581c92ee.js.map",
+    "static/js/2.a73efaf5.chunk.js": "/presale/static/js/2.a73efaf5.chunk.js",
+    "static/js/2.a73efaf5.chunk.js.map": "/presale/static/js/2.a73efaf5.chunk.js.map",
+    "static/js/3.a64233a7.chunk.js": "/presale/static/js/3.a64233a7.chunk.js",
+    "static/js/3.a64233a7.chunk.js.map": "/presale/static/js/3.a64233a7.chunk.js.map",
+    "index.html": "/presale/index.html",
+    "static/css/main.3db758a9.chunk.css.map": "/presale/static/css/main.3db758a9.chunk.css.map",
+    "static/js/2.a73efaf5.chunk.js.LICENSE.txt": "/presale/static/js/2.a73efaf5.chunk.js.LICENSE.txt",
+    "static/media/1.75f03515.png": "/presale/static/media/1.75f03515.png",
+    "static/media/reset.css": "/presale/static/media/PressStart2P-Regular.f2341734.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.6e67e627.js",
-    "static/js/2.000a2352.chunk.js",
-    "static/css/main.741ee34a.chunk.css",
-    "static/js/main.ef9012bb.chunk.js"
+    "static/js/runtime-main.581c92ee.js",
+    "static/js/2.a73efaf5.chunk.js",
+    "static/css/main.3db758a9.chunk.css",
+    "static/js/main.af742cb7.chunk.js"
   ]
 }
