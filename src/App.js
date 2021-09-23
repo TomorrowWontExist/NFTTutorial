@@ -6,6 +6,30 @@ import * as s from "./styles/globalStyles";
 import styled from "styled-components";
 import i1 from "./assets/images/1.png";
 
+export const StyledNumberInput = styled.input.attrs((props) => ({
+  type: 'number',
+  min: 1,
+  max: 10,
+  defaultValue: props.value,
+}))`
+border-radius: 50px;
+border: none;
+background-color: #ffffff;
+padding: 10px;
+font-weight: bold;
+color: #000000;
+width: 50px;
+cursor: ;
+box-shadow: 2px 8px 4px -2px rgba(250, 250, 0, 0.5);
+-webkit-box-shadow: 2px 3px 10px -2px rgba(0, 0, 0, 0.5);
+-moz-box-shadow: 2px 8px 4px -2px rgba(250, 250, 0, 0.5);
+:active {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+`;
+
 export const StyledButton = styled.button`
   padding: 10px;
   border-radius: 50px;
@@ -58,6 +82,7 @@ function App() {
   const data = useSelector((state) => state.data);
   const [feedback, setFeedback] = useState("What Personality will your Bee have?");
   const [claimingNft, setClaimingNft] = useState(false);
+  const [mintQuantity, setMintQuantity] = useState(1)
 
   const claimNFTs = (_amount) => {
     if (_amount <= 0) {
@@ -103,7 +128,7 @@ function App() {
         <s.TextTitle
           style={{ textAlign: "center", fontSize: 36, fontWeight: "bold" }}
         >
-          The Bee Group 1
+          The Bee Collaborative 5
           
         </s.TextTitle>
         <s.SpacerMedium />
@@ -114,7 +139,7 @@ function App() {
             <s.TextTitle
               style={{ textAlign: "center", fontSize: 26, fontWeight: "bold" }}
             >
-              {data.totalSupply}/100
+              {data.totalSupply}/10000
             </s.TextTitle>
           </s.Container>
           <s.SpacerMedium />
@@ -124,7 +149,7 @@ function App() {
             ai={"center"}
             style={{ backgroundColor: "#000000", padding: 12 }}
           >
-            {Number(data.totalSupply) == 100 ? (
+            {Number(data.totalSupply) == 10000 ? (
               <>
                 <s.TextTitle style={{ textAlign: "center" }}>
                   The sale has ended.
@@ -182,15 +207,19 @@ function App() {
                   </s.Container>
                 ) : (
                   <s.Container ai={"center"} jc={"center"} fd={"row"}>
+                    <StyledNumberInput 
+                    value={mintQuantity}
+                      onChange={(e) => setMintQuantity(e.target.value) }
+                    />
                     <StyledButton
                       disabled={claimingNft ? 1 : 0}
                       onClick={(e) => {
                         e.preventDefault();
-                        claimNFTs(1);
+                        claimNFTs(mintQuantity);
                         getData();
                       }}
                     >
-                      {claimingNft ? "Busy..." : "Buy 1 NFT"}
+                      {claimingNft ? "BUSY" : `BUY  ${mintQuantity}`}
                     </StyledButton>
                   </s.Container>
                 )}
