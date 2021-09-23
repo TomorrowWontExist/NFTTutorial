@@ -13,7 +13,7 @@ const fetchDataSuccess = (payload) => {
     payload: payload,
   };
 };
-
+//
 const fetchDataFailed = (payload) => {
   return {
     type: "CHECK_DATA_FAILED",
