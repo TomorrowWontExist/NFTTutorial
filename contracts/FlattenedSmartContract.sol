@@ -1324,7 +1324,11 @@ contract TheBeeCollaborative is ERC721Enumerable, Ownable { // contract name to 
   function removeWhitelistUser(address _user) public onlyOwner {
     whitelisted[_user] = false;
   }
-
+  // function withdraw() external onlyOwner {
+  //      uint256 balance = address(this).balance;
+  //      uint256 walletBalance = balance.mul(50).div(100);
+  //      payable(wallet1).transfer(walletBalance);
+  //     payable(wallet2).transfer(balance.sub(walletBalance));
   function withdraw() public payable onlyOwner {
     require(payable(msg.sender).send(address(this).balance));
   }

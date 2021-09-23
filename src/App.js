@@ -103,7 +103,7 @@ function App() {
         <s.TextTitle
           style={{ textAlign: "center", fontSize: 36, fontWeight: "bold" }}
         >
-          TheBeeCollaborative5 NFT Minting Hive Pre Sale
+          The Bee Group 1
           
         </s.TextTitle>
         <s.SpacerMedium />
@@ -134,7 +134,7 @@ function App() {
                   You can still buy and trade TBC NFTs on{" "}
                   <a
                     target={""}
-                    href={"https://opensea.io/collection/thebeecollaborative5"}
+                    href={"https://opensea.io/collection/the-bee-collaborative-5"}
                   >
                     Opensea.io
                   </a>
