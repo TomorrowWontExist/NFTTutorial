@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/presale/static/css/main.3db758a9.chunk.css",
-    "main.js": "/presale/static/js/main.6cdb1b88.chunk.js",
-    "main.js.map": "/presale/static/js/main.6cdb1b88.chunk.js.map",
+    "main.js": "/presale/static/js/main.d524bae0.chunk.js",
+    "main.js.map": "/presale/static/js/main.d524bae0.chunk.js.map",
     "runtime-main.js": "/presale/static/js/runtime-main.7b06389a.js",
     "runtime-main.js.map": "/presale/static/js/runtime-main.7b06389a.js.map",
     "static/js/2.c5f71b8a.chunk.js": "/presale/static/js/2.c5f71b8a.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.7b06389a.js",
     "static/js/2.c5f71b8a.chunk.js",
     "static/css/main.3db758a9.chunk.css",
-    "static/js/main.6cdb1b88.chunk.js"
+    "static/js/main.d524bae0.chunk.js"
   ]
 }
