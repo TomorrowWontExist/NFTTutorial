@@ -5,17 +5,20 @@ import { fetchData } from "./redux/data/dataActions";
 import * as s from "./styles/globalStyles";
 import styled from "styled-components";
 import i1 from "./assets/images/1.png";
+import i2 from "./assets/images/2.png";
+import ReactPlayer from 'react-player';
+import i3 from "./assets/images/3.png";
 
 export const StyledNumberInput = styled.input.attrs((props) => ({
   type: 'number',
   min: 1,
-  max: 10,
+  max: 1000,
   defaultValue: props.value,
 }))`
 border-radius: 50px;
 border: none;
-background-color: #ffffff;
-padding: 10px;
+background-color: #999000;
+padding: 5px;
 font-weight: bold;
 color: #000000;
 width: 50px;
@@ -34,14 +37,14 @@ export const StyledButton = styled.button`
   padding: 10px;
   border-radius: 50px;
   border: none;
-  background-color: #ffffff;
+  background-color: #000000;
   padding: 10px;
   font-weight: bold;
-  color: #000000;
+  color: #ffffff;
   width: 300px;
   cursor: pointer;
   box-shadow: 2px 8px 4px -2px rgba(250, 250, 0, 0.5);
-  -webkit-box-shadow: 2px 3px 10px -2px rgba(250, 250, 0, 0.5);
+  -webkit-box-shadow: 2px 3px 10px -2px rgba(250, 250, 0, 1.0);
   -moz-box-shadow: 2px 8px 4px -2px rgba(250, 250, 0, 0.5);
   :active {
     box-shadow: none;
@@ -49,13 +52,13 @@ export const StyledButton = styled.button`
     -moz-box-shadow: none;
   }
   :hover {
-    -webkit-box-shadow: 2px 3px 40px -2px rgba(250, 250, 0, 0.9);
+    -webkit-box-shadow: 2px 3px 20px -2px rgba(100, 0, 250, 0.9);
   }
 `;
 
 export const ResponsiveWrapper = styled.div`
   display: flex;
-  flex: 1;
+  flex: ;
   flex-direction: column;
   justify-content: stretched;
   align-items: stretched;
@@ -65,9 +68,31 @@ export const ResponsiveWrapper = styled.div`
   }
 `;
 
-export const StyledImg = styled.img`
+export const StyledImg1 = styled.img`
   width: 200px;
   height: 200px;
+  @media (min-width: 767px) {
+    width: 340px;
+    height: 240px;
+  }
+  transition: width 0.5s;
+  transition: height 0.5s;
+`;
+
+export const StyledImg2 = styled.img`
+  width: 200px;
+  height: 200px;
+  @media (min-width: 767px) {
+    width: 900px;
+    height: 260px;
+  }
+  transition: width 0.5s;
+  transition: height 0.5s;
+`;
+
+export const StyledImg3 = styled.img`
+  width: 300px;
+  height: 300px;
   @media (min-width: 767px) {
     width: 300px;
     height: 300px;
@@ -80,7 +105,7 @@ function App() {
   const dispatch = useDispatch();
   const blockchain = useSelector((state) => state.blockchain);
   const data = useSelector((state) => state.data);
-  const [feedback, setFeedback] = useState("What Personality will your Bee have?");
+  const [feedback, setFeedback] = useState("Make Payment or Tip ScrawnyViking | 1 TWEE = .05 ETH");
   const [claimingNft, setClaimingNft] = useState(false);
   const [mintQuantity, setMintQuantity] = useState(1)
 
@@ -88,24 +113,24 @@ function App() {
     if (_amount <= 0) {
       return;
     }
-    setFeedback("Preparing your Twee the Bee NFT...");
+    setFeedback("Preparing your Bee NFT and Sending Payment/Tip to TWECryptoDev...");
     setClaimingNft(true);
     blockchain.smartContract.methods
       .mint(_amount)
       .send({
         gasLimit: "285000",
-        to: "0xf2f146ab47059cb00714a44c2d33c0ab71be56f1",
+        to: "0x688db0131c807a3495c23bc1b25726a76ea31f49",
         from: blockchain.account,
-        value: blockchain.web3.utils.toWei((.01 * _amount).toString(), "ether"),
+        value: blockchain.web3.utils.toWei((.05 * _amount).toString(), "ether"),
       })
       .once("error", (err) => {
         console.log(err);
-        setFeedback("It seems the transaction was cancelled.");
+        setFeedback("It seems the transaction was cancelled | 1 TWEE = .05 ETH");
         setClaimingNft(false);
       })
       .then((receipt) => {
         setFeedback(
-          "Woohoo! You just helped save the Bees! Visit Opensea.io to view your randomly generated NFT!"
+          "Your Payment/Tip for TWEcryptoDev's Services has completed!"
         );
         setClaimingNft(false);
         dispatch(fetchData(blockchain.account));
@@ -124,68 +149,67 @@ function App() {
 
   return (
     <s.Screen style={{ backgroundColor: "var(--black)" }}>
-      <s.Container flex={1} ai={"center"} style={{ padding: 12 }}>
+      <s.Container flex={1} ai={"center"} style={{ padding: 50 }}>
         <s.TextTitle
-          style={{ textAlign: "center", fontSize: 36, fontWeight: "bold" }}
+          style={{ textAlign: "center", fontSize: 32, fontWeight: "bold" }}
         >
-          The Bee Collaborative 5
+          TWECryptoDev "ScrawnyViking"<p/> 
+          Fullstack Blockchain Development
           
         </s.TextTitle>
-        <s.SpacerMedium />
-        <ResponsiveWrapper flex={1} style={{ padding: 12 }}>
+        <s.TextTitle style={{ textAlign: "center" }}>
+                Knowledge | Truth | Understanding
+                </s.TextTitle>
+        <ResponsiveWrapper flex={10} style={{ padding: 2 }}>
           <s.Container flex={1} jc={"center"} ai={"center"}>
-            <StyledImg alt={"example"} src={i1} />
-            <s.SpacerMedium />
+            <StyledImg1 alt={"example"} src={i1} />
+            <s.SpacerSmall/>
+            <s.TextSubTitle style={{ textAlign: "center" }}>
+                  Tomorrow Won't Exist... <p/>If There's Never a Right Now{" "}
+                  <a
+                    target={""}
+                    href={"https://TomorrowWontExist.com"}
+                  >
+                    <p/>LiveInTheNowMovement
+                  </a>
+                </s.TextSubTitle>
+            <StyledImg2 alt={"example"} src={i2} />
             <s.TextTitle
               style={{ textAlign: "center", fontSize: 26, fontWeight: "bold" }}
             >
-              {data.totalSupply}/100
+              {/* {data.totalSupply}/10000 */}
             </s.TextTitle>
           </s.Container>
-          <s.SpacerMedium />
           <s.Container
-            flex={1}
+            flex={10}
             jc={"center"}
             ai={"center"}
-            style={{ backgroundColor: "#000000", padding: 12 }}
+            style={{ backgroundColor: "#000000", padding: 2 }}
           >
-            {Number(data.totalSupply) == 100 ? (
+            {Number(data.totalSupply) == 10000 ? (
               <>
                 <s.TextTitle style={{ textAlign: "center" }}>
-                  The sale has ended.
+                SOLD OUT!
                 </s.TextTitle>
-                <s.SpacerSmall />
+                <s.SpacerMedium />
                 <s.TextDescription style={{ textAlign: "center" }}>
-                  You can still buy and trade TBC NFTs on{" "}
+                  You can still trade Bee NFTs {" "}
                   <a
                     target={""}
-                    href={"https://opensea.io/collection/the-bee-collaborative-5"}
+                    href={"https://opensea.io/collection/the-bee-collaborative"}
                   >
-                    Opensea.io
+                    The Bee Collaborative
                   </a>
                 </s.TextDescription>
               </>
             ) : (
               <>
-                <s.TextTitle style={{ textAlign: "center" }}>
-                  1 TWEE NFT costs .01 ETH
-                </s.TextTitle>
-                <s.SpacerXSmall />
-                <s.TextDescription style={{ textAlign: "center" }}>
-                  -excluding gas fee-
-                </s.TextDescription>
-                <s.SpacerLarge />
-                <s.SpacerSmall />
                 <s.TextDescription style={{ textAlign: "center" }}>
                   {feedback}
                 </s.TextDescription>
-                <s.SpacerMedium />
                 {blockchain.account === "" ||
                 blockchain.smartContract === null ? (
                   <s.Container ai={"center"} jc={"center"}>
-                    <s.TextDescription style={{ textAlign: "center" }}>
-                    
-                    </s.TextDescription>
                     <s.SpacerSmall />
                     <StyledButton
                       onClick={(e) => {
@@ -219,7 +243,7 @@ function App() {
                         getData();
                       }}
                     >
-                      {claimingNft ? "BUSY" : `BUY  ${mintQuantity}`}
+                      {claimingNft ? "BUSY..." : `SEND  ${mintQuantity} TWEE`}
                     </StyledButton>
                   </s.Container>
                 )}
@@ -228,17 +252,82 @@ function App() {
           </s.Container>
         </ResponsiveWrapper>
         <s.SpacerSmall />
-        <s.Container jc={"center"} ai={"center"} style={{ width: "70%" }}>
-          <s.TextDescription style={{ textAlign: "center", fontSize: 18 }}>
-            50% of all proceeds go towards Charity and adding Liquidity to TBC Token
+        <s.TextDescription style={{ textAlign: "center", fontSize: 18 }}>
+            Team TWE's Payment Center includes a Free Bee NFT for every .05 ETH
           </s.TextDescription>
+        <s.TextDescription style={{ textAlign: "center", fontSize: 14 }}>
+          Opt Out and send Payments/Tips directly to TWECryptoDev<p/>
+          <button 
+  onClick={() =>  navigator.clipboard.writeText('0x2cb473fDdEBDe10c66BC2312b6b6109F594ef56d')}
+>
+Click to copy Wallet Address
+</button>
+          </s.TextDescription>
+          <s.SpacerLarge />
+          <StyledImg3 alt={"example"} src={i3} />
+          <s.TextDescription style={{ textAlign: "center" }}>
+                  {" "}
+                  <a
+                    target={""}
+                    href={"https://t.me/TBCToken"}
+                  >
+                    Telegram
+                  </a>
+                </s.TextDescription>
+                <s.TextDescription style={{ textAlign: "center" }}>
+                   {" "}
+                  <a
+                    target={""}
+                    href={"https://discord.gg/Rx2b4JTxJr"}
+                  >
+                    Discord
+                  </a>
+                </s.TextDescription>
+          <s.SpacerMedium />
+                <s.TextDescription style={{ textAlign: "center" }}>
+                  Participate in our NFT TBC Token Presale Event {" "}
+                  <a
+                    target={""}
+                    href={"https://opensea.io/collection/tweethebee"}
+                  >
+                    Twee the Bee Special Edition Collection
+                  </a>
+                </s.TextDescription>
+        <s.Container jc={"top"} ai={"center"} style={{ width: "70%" }}>
+                <s.SpacerSmall />
+                <s.TextDescription style={{ textAlign: "center" }}>
+                  Check out the Bee Charity / Rewards Token {" "}
+                  <a
+                    target={""}
+                    href={"https://tbc.exchange"}
+                  >
+                    The Bee Collaborative
+                  </a>
+                </s.TextDescription>
+                <s.SpacerSmall />
+                <s.TextDescription style={{ textAlign: "center" }}>
+                  Save the Bees with NFTs and Play BEEingo {" "}
+                  <a
+                    target={""}
+                    href={"https://tomorrowwontexist.github.io/tbcnft/"}
+                  >
+                    Buy your BEEingo NFT
+                  </a>
+                </s.TextDescription>
           <s.SpacerSmall />
           <s.TextDescription style={{ textAlign: "center", fontSize: 14 }}>
-            Bee Rewarded to help Save the Bees #TBCToken<p/>*.*.*Launching_Soon*.*.*
+            *.*.*TBC Token and $1000 Daily NFT BEEingo Launching Soon*.*.*
           </s.TextDescription>
+          <s.SpacerMedium />
+          <ReactPlayer url='https://youtu.be/HgjwmDoPNx4' />
         </s.Container>
       </s.Container>
-    </s.Screen>
+    <s.SpacerMedium />
+    <s.TextDescription style={{ textAlign: "center", fontSize: 14 }}>
+            *.*.*This custom DApp will be upgraded frequently*.*.*<p/>
+            ***More Instructional Videos are on the way***
+          </s.TextDescription>
+  </s.Screen>
   );
 }
 

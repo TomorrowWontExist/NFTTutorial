@@ -8,7 +8,7 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Save the Bees with NFTs"
+      content="TWECrpytoDev - ScrawnyViking's Payment Center"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
@@ -25,10 +25,41 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>The Bee Collaborative</title>
+    <title>TWECryptoDev | ScrawnyViking</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script>
+      var MY_ADDRESS = '0x2cb473fDdEBDe10c66BC2312b6b6109F594ef56d'
+      var tipButton = document.querySelector('.tip-button')
+  
+      tipButton.addEventListener('click', function() 
+          {
+          if (typeof web3 === 'undefined') 
+              {
+              return renderMessage('<div>You need to install <a href=“https://metmask.io“>MetaMask </a> to use this feature.  <a href=“https://metmask.io“>https://metamask.io</a></div>')
+              }
+  
+          var user_address = web3.eth.accounts[0]
+  
+          web3.eth.sendTransaction(
+              {
+              to: MY_ADDRESS,
+              from: user_address,
+              value: web3.toWei('0.01', 'ether'),
+              }, 
+              function (err, transactionHash) 
+                  {
+                  if (err) return renderMessage('There was a problem!: ' + err.message)
+                  renderMessage('Thanks for the generosity!!')
+              })
+          })
+  
+      function renderMessage (message) 
+          {
+          var messageEl = document.querySelector('.message')
+          messageEl.innerHTML = message
+          }
+      </script>
     <div id="root"></div>
     <!--
       This HTML file is a template.

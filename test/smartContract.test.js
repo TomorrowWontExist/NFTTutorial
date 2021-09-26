@@ -1,4 +1,4 @@
-const SmartContract = artifacts.require("./SmartContract.sol");
+const SmartContract = artifacts.require("./FlattenedSmartContract.sol");
 
 require("chai").use(require("chai-as-promised")).should();
 

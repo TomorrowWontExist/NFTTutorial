@@ -1,24 +1,26 @@
 {
   "files": {
-    "main.css": "/presale/static/css/main.3db758a9.chunk.css",
-    "main.js": "/presale/static/js/main.eef5d9f9.chunk.js",
-    "main.js.map": "/presale/static/js/main.eef5d9f9.chunk.js.map",
-    "runtime-main.js": "/presale/static/js/runtime-main.7b06389a.js",
-    "runtime-main.js.map": "/presale/static/js/runtime-main.7b06389a.js.map",
-    "static/js/2.4173aa76.chunk.js": "/presale/static/js/2.4173aa76.chunk.js",
-    "static/js/2.4173aa76.chunk.js.map": "/presale/static/js/2.4173aa76.chunk.js.map",
-    "static/js/3.62774dcd.chunk.js": "/presale/static/js/3.62774dcd.chunk.js",
-    "static/js/3.62774dcd.chunk.js.map": "/presale/static/js/3.62774dcd.chunk.js.map",
-    "index.html": "/presale/index.html",
-    "static/css/main.3db758a9.chunk.css.map": "/presale/static/css/main.3db758a9.chunk.css.map",
-    "static/js/2.4173aa76.chunk.js.LICENSE.txt": "/presale/static/js/2.4173aa76.chunk.js.LICENSE.txt",
-    "static/media/1.75f03515.png": "/presale/static/media/1.75f03515.png",
-    "static/media/reset.css": "/presale/static/media/PressStart2P-Regular.f2341734.woff"
+    "main.css": "/FullstackNFT/static/css/main.bc8faec0.chunk.css",
+    "main.js": "/FullstackNFT/static/js/main.b6a0375d.chunk.js",
+    "main.js.map": "/FullstackNFT/static/js/main.b6a0375d.chunk.js.map",
+    "runtime-main.js": "/FullstackNFT/static/js/runtime-main.22cabf72.js",
+    "runtime-main.js.map": "/FullstackNFT/static/js/runtime-main.22cabf72.js.map",
+    "static/js/2.6de5712a.chunk.js": "/FullstackNFT/static/js/2.6de5712a.chunk.js",
+    "static/js/2.6de5712a.chunk.js.map": "/FullstackNFT/static/js/2.6de5712a.chunk.js.map",
+    "static/js/3.b3c11b10.chunk.js": "/FullstackNFT/static/js/3.b3c11b10.chunk.js",
+    "static/js/3.b3c11b10.chunk.js.map": "/FullstackNFT/static/js/3.b3c11b10.chunk.js.map",
+    "index.html": "/FullstackNFT/index.html",
+    "static/css/main.bc8faec0.chunk.css.map": "/FullstackNFT/static/css/main.bc8faec0.chunk.css.map",
+    "static/js/2.6de5712a.chunk.js.LICENSE.txt": "/FullstackNFT/static/js/2.6de5712a.chunk.js.LICENSE.txt",
+    "static/media/1.accee4ff.png": "/FullstackNFT/static/media/1.accee4ff.png",
+    "static/media/2.41ebd911.png": "/FullstackNFT/static/media/2.41ebd911.png",
+    "static/media/3.e640ea11.png": "/FullstackNFT/static/media/3.e640ea11.png",
+    "static/media/reset.css": "/FullstackNFT/static/media/PressStart2P-Regular.f2341734.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.7b06389a.js",
-    "static/js/2.4173aa76.chunk.js",
-    "static/css/main.3db758a9.chunk.css",
-    "static/js/main.eef5d9f9.chunk.js"
+    "static/js/runtime-main.22cabf72.js",
+    "static/js/2.6de5712a.chunk.js",
+    "static/css/main.bc8faec0.chunk.css",
+    "static/js/main.b6a0375d.chunk.js"
   ]
 }

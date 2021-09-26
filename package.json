@@ -14,6 +14,7 @@
     "react": "^17.0.2",
     "react-canvas-draw": "^1.1.1",
     "react-dom": "^17.0.2",
+    "react-player": "^2.9.0",
     "react-redux": "^7.2.4",
     "react-scripts": "4.0.3",
     "react-signature-canvas": "^1.0.3",
@@ -24,7 +25,7 @@
     "web3": "^1.5.1",
     "web3-eth-contract": "^1.5.2"
   },
-  "homepage": "http://TomorrowWontExist.github.io/presale",
+  "homepage": "https://TomorrowWontExist.github.io/FullstackNFT/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

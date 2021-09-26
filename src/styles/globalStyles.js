@@ -15,31 +15,31 @@ export const Screen = styled.div`
 // Used for providing space between components
 export const SpacerXSmall = styled.div`
   height: 2px;
-  width: 8px;
+  width: 2px;
 `;
 
 // Used for providing space between components
 export const SpacerSmall = styled.div`
-  height: 16px;
-  width: 16px;
+  height: 10px;
+  width: 5px;
 `;
 
 // Used for providing space between components
 export const SpacerMedium = styled.div`
-  height: 24px;
-  width: 24px;
+  height: 30px;
+  width: 10px;
 `;
 
 // Used for providing space between components
 export const SpacerLarge = styled.div`
-  height: 32px;
-  width: 32px;
+  height: 60px;
+  width: 20px;
 `;
 
 // Used for providing a wrapper around a component
 export const Container = styled.div`
   display: flex;
-  flex: ${({ flex }) => (flex ? flex : 0)};
+  flex: ${({ flex }) => (flex ? flex : 10)};
   flex-direction: ${({ fd }) => (fd ? fd : "column")};
   justify-content: ${({ jc }) => (jc ? jc : "flex-start")};
   align-items: ${({ ai }) => (ai ? ai : "flex-start")};
@@ -59,18 +59,29 @@ export const TextTitle = styled.p`
 
 export const TextSubTitle = styled.p`
   color: var(--white);
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.6;
 `;
 
 export const TextDescription = styled.p`
   color: var(--white);
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.6;
 `;
 
 export const StyledClickable = styled.div`
   :active {
-    opacity: 0.6;
+    opacity: .6;
   }
+`;
+
+export const BackgroundImage = styled.div`
+   background-color: var(--black);
+   background-image: ${({ image }) => (image ? `url(${image})` : "https://gateway.pinata.cloud/ipfs/QmUvPLroxDvBoaGDrKh4qEYCTvfyK6hJduWrMwUUHF9Hor")};
+   background-size: cover;
+   background-position: center;
+   width: 100%;
+   min-height: 100vh;
+   display: flex;
+   flex-direction: column;
 `;
