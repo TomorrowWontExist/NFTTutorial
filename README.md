@@ -60,18 +60,18 @@ git clone https://github.com/TomorrowWontExist/FullstackNFT.git<p/>
 <p/>
 Frontend DApp "Minting Station" Starts Here<p/>
 <p/>
-Create an empty Repository on github.com, follow video, Do Not add a README or anything else, leave it empty. Name it whatever yo'd like.<p/>
+Create an empty Repository on github.com, follow video, Do Not add a README or anything else, leave it empty. Name it whatever you'd like.<p/>
 <p/>
 now type... cd (paste name of the new repository you just made) <p/>
 npm install gh-pages --save-dev<p/>
 <p/>
-Go to package.json line 27 and change homepage to yours. "http://.github.io/"<p/>
+Go to package.json line 27 and change homepage to yours. "http://(username).github.io/(reponame)"<p/>
 
 Goto migrations folder - 2_smart_contract_migration.js // Change to your contracts name<p/>
 <p/>
-Goto deploy files folder - Replace ABI from Strings with code inside ABICodeForVerification.txt<p/>
+Goto deploy files folder - Replace ABI from Strings with code inside ABI.txt<p/>
 
-Goto public folder and replace Logos in both sizes, the the favicon... to create a .ico file... open your logo in paintshop, then save it as a BMP-24 file and put a .ico at the end when saving.<p/>
+Goto public folder and replace Logos in both sizes, then the favicon... to create a .ico file... open your logo in paintshop, then save it as a BMP-24 file and put a .ico at the end when saving.<p/>
 <p/>
 Goto redux folder, then blockchain - blockchainActions.js // Line 54 and 57 Line 54 is Network ID, which network is your smart contract deployed on? // 1=Ethereum 4=Rinkby Line 57 is contract address // Paste yours<p/>
 <p/>
