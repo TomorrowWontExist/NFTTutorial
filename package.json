@@ -25,14 +25,11 @@
     "web3": "^1.5.1",
     "web3-eth-contract": "^1.5.2"
   },
-  "homepage": "https://TomorrowWontExist.github.io/FullstackNFT/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -53,7 +50,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^3.2.3",
     "truffle-plugin-verify": "^0.5.15"
   }
 }
