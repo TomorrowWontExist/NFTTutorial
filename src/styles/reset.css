@@ -124,14 +124,14 @@ table {
 }
 
 @font-face {
-  font-family: 'Monteserrat-SemiBoldItalic';
-  src: local("Monteserrat-SemiBoldItalic"),
-    url(D:\BeeingoMintingHive\src\assets\fonts\Montserrat-SemiBoldItalic.ttf) format("ttf");
+  font-family: 'Slackey-Regular';
+  src: local("Slackey-Regular"),
+    url(D:\BeeingoMintingHive\src\assets\fonts\Slackey-Regular.ttf) format("ttf");
 }
 
 body {
   margin: 0;
-  font-family: "Monteserrat-SemiBoldItalic";
+  font-family: "Slackey-Regular";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
