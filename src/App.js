@@ -74,7 +74,7 @@ export const StyledButton = styled.button`
   -moz-box-shadow: 2px 8px 4px -2px rgba(250, 250, 0, 0.5);
   :active {
     box-shadow: none;
-    -webkit-box-shadow: none;
+    -webkit-box-shadow: 2px 3px 10px -2px rgba(250, 250, 0, 1.0);
     -moz-box-shadow: none;
   }
   :hover {
@@ -137,11 +137,11 @@ box-shadow: 2px 8px 4px -2px rgba(100, 0, 250, 0.5);
 export const Gallery = styled.div`
   height: 0px;
   position: fixed;
-  margin-bottom: 10px;
+  margin-bottom: 0px;
 
   .photobanner {
     position: fixed;
-    top: 540px;
+    top: 740px;
     right: 0px;
     overflow: hidden;
     white-space: nowrap;
@@ -171,7 +171,7 @@ function App() {
   const dispatch = useDispatch();
   const blockchain = useSelector((state) => state.blockchain);
   const data = useSelector((state) => state.data);
-  const [feedback, setFeedback] = useState(" 1 TBC NFT = .02 ETH");
+  const [feedback, setFeedback] = useState(" 1 Bee NFT = .02 ETH");
   const [claimingNft, setClaimingNft] = useState(false);
   const [mintQuantity, setMintQuantity] = useState(1)
 
@@ -245,7 +245,7 @@ function App() {
                 </s.TextTitle>
                 <s.SpacerMedium />
                 <s.TextDescription style={{ textAlign: "center" }}>
-                  You can still trade Bee NFTs at {" "}
+                  You can still trade Bee-ingo NFTs at {" "}
                   <a
                     target={""}
                     href={"https://opensea.io/collection/the-bee-collaborative"}
@@ -295,7 +295,7 @@ function App() {
                         getData();
                       }}
                     >
-                      {claimingNft ? "BUZZY..." : `Purchase ${mintQuantity} Bees`}
+                      {claimingNft ? "BUZZY..." : `Purchase ${mintQuantity} Beeingo NFT`}
                     </StyledButton>
                   </s.Container>
                 )}
@@ -350,11 +350,7 @@ function App() {
 Click to Copy Etherscan Address | Buy Straight from Contract
 </button> */}
           </s.TextDescription>
-          <s.SpacerLarge />
-          <s.SpacerLarge />
-          <s.SpacerLarge />
-          <s.SpacerLarge />
-          <s.SpacerMedium />
+          <s.SpacerSmall />
           <div>
             <a href="https://opensea.io/collection/the-bee-collaborative">
 <StyledImg4 src={i9} style={{ width: 260, height: 200, padding: 0 }}/>
@@ -389,19 +385,12 @@ Click to Copy Etherscan Address | Buy Straight from Contract
         <s.Container jc={"top"} ai={"center"} style={{ width: "70%" }}>
         <s.SpacerLarge />
           <s.SpacerLarge/>
-          <s.SpacerLarge/>
-          <s.SpacerLarge/>
-          <s.SpacerLarge/>
           <ReactPlayer url='https://youtu.be/HgjwmDoPNx4'/>
           <s.SpacerLarge />
           <s.SpacerLarge />
         </s.Container>
       </s.Container>
       <s.SpacerLarge />
-      <s.SpacerLarge/>
-      <s.SpacerLarge/>
-      <s.SpacerLarge/>
-      <s.SpacerLarge/>
   </s.Screen>
   );
 }
