@@ -98,9 +98,11 @@ export const StyledImg1 = styled.img`
 height: 0px;
 center
 position: fixed;
+  margin-bottom: 0px;
+  margin-top: 200px;
   @media (min-width: 767px) {
-    width: 950px;
-    height: 320px;
+    width: 900px;
+    height: 300px;
   }
   transition: width 0.5s;
   transition: height 0.5s;
@@ -141,7 +143,7 @@ export const Gallery = styled.div`
 
   .photobanner {
     position: fixed;
-    top: 740px;
+    top: 0px;
     right: 0px;
     overflow: hidden;
     white-space: nowrap;
@@ -215,7 +217,7 @@ function App() {
 
   return (
     <s.Screen style={{ backgroundColor: "var(--black)" }}>
-      <s.Container flex={1} ai={"center"} style={{ padding: 0 }}>
+      <s.Container flex={1} ai={"center"} style={{ padding: 15 }}>
         <s.TextTitle
           style={{ textAlign: "center", fontSize: 42, fontWeight: "bold" }}
         >
@@ -384,13 +386,11 @@ Click to Copy Etherscan Address | Buy Straight from Contract
                 </s.TextDescription> */}
         <s.Container jc={"top"} ai={"center"} style={{ width: "70%" }}>
         <s.SpacerLarge />
-          <s.SpacerLarge/>
+          <ReactPlayer url='https://youtu.be/IiH9dNAmgB4'/>
+          <s.SpacerSmall />
           <ReactPlayer url='https://youtu.be/HgjwmDoPNx4'/>
-          <s.SpacerLarge />
-          <s.SpacerLarge />
         </s.Container>
       </s.Container>
-      <s.SpacerLarge />
   </s.Screen>
   );
 }
