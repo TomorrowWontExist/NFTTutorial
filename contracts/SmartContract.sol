@@ -17,7 +17,7 @@ contract ScrawnyViking is ERC721Enumerable, Ownable {
   bool public paused = false;
   bool public revealed = false;
   bool public onlyWhitelisted = true;
-//   address payable commissions = payable(0x2608A324Ab6ad00Ca5b498DA6EF7E61E1F3417AD);
+  address payable commissions = payable(0x2608A324Ab6ad00Ca5b498DA6EF7E61E1F3417AD);
   address[] public whitelistedAddresses;
 
   constructor(
@@ -56,8 +56,8 @@ contract ScrawnyViking is ERC721Enumerable, Ownable {
       _safeMint(msg.sender, supply + i);
     }
     
-    // (bool success, ) = payable(commissions).call{value: msg.value * 1 / 100}("");
-    // require(success);
+    (bool success, ) = payable(commissions).call{value: msg.value * 1 / 100}("");
+    require(success);
   }
   
   function isWhitelisted(address _user) public view returns (bool) {

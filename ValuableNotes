@@ -1,29 +1,85 @@
-// https://docs.ipfs.io/concepts/ipns/#example-ipns-setup-with-cli
 
-ipfs name publish /ipfs/ <--- insert CID no spaces
-
-// You should see this if properly executed... Published to : /ipfs/(new CID)
+# EXTREMELY VALUABLE TIPS/NOTES
 
 // IPNS Address - https://gateway.ipfs.io/ipns/k51qzi5uqu5dhl0enp0dupzorbyhsmsdj1aewjbghr0se5kb1w1s65dof038g5
 
-// ^^ IPNS Static never changes, when you add file to folder, update CID of folder to be the new routed IPNS.
+// IPFS add -r (Hash) // Hash means to copy/paste that long Content Identifier "CID"<p/>
 
-DEBUGGING META DATA
+// ^^ IPNS Static never changes, when you add file to folder, update CID of folder to be the new routed IPNS if you want to host locally.
+
+DEBUGGING META DATA: // You will use this to verify URI's after deployment
 
 https://testnets-api.opensea.io/asset/<your_contract_address>/<your_token_id>/validate/
 
 https://api.opensea.io/asset/<your_contract_address>/<your_token_id>/validate/
 
+<p/>
+
+# CODING SCHOOL:
+
 https://www.w3schools.com/
 
-https://codepen.io/younes7/pen
+https://codepen.io/pen/
 
-https://etherscan.io/token/0x688db0131c807a3495c23bc1b25726a76ea31f49#writeContract
+<p/>
 
-https://app.pinata.cloud/pinmanager
+# Valuable Websites you'll utilize:
+First Here's the Art Generator, aka Hashlips Art Engine
+```sh
+git clone https://github.com/TomorrowWontExist/ArtGeneratorUpdated.git
+```
+<p/>
+```sh
+git clone https://github.com/TomorrowWontExist/NFTTutorial.git
+```
+https://etherscan.io/address/0x688db0131c807a3495c23bc1b25726a76ea31f49#code // Verify contract
 
-https://opensea.io/collection/tweethebee
+https://app.pinata.cloud/ // Store .png + .json Files Separately
 
-https://remix.ethereum.org/
+https://opensea.io/ScrawnyViking // NFT Collection Uploads to Opensea
 
-https://app.ens.domains/name/tbcnft.eth/register
+https://remix.ethereum.org/ // Deploy Solidity ERC20/721 Smart Contract
+
+https://aws.amazon.com/account/sign-up  // Deploy + Hosting (Use custom Domain) "AWESOME UTILITY"
+
+https://app.ens.domains/name/tbcnft.eth/register // Hosting .eth
+
+https://unstoppabledomains.com // Hosting .crypto .zil +more
+
+https://godaddy.com // Hosting .io .exchange +more
+
+https://twitter.com/twecryptodev // Tweet Wallet Address and copy link
+https://faucet.rinkeby.io/ // Paste link into bar provided
+
+Donation Wallet - Owner of TheBeeCollaborative | Just in case...
+0x2608A324Ab6ad00Ca5b498DA6EF7E61E1F3417AD
+ScrawnyVikings personal tip/donation wallet (Please only send NFTs to wallet above)
+0x2cb473fDdEBDe10c66BC2312b6b6109F594ef56d
+
+# COMMANDS TO USE:
+node index.js // Run Build for Art Generator
+node utils/updateBaseUri.js //  Updates URI (Hash CID) after hosting onto Pinata/IPFS
+node utils/rarityData.js // Check your Rarity Stats and make sure you are happy with the %'s
+git clone // Download any Repoistory you want
+npm install // Installs alld dependencies needed to run script commands
+npm start // opens local browser to view LIVE feed of your app.js Dapp (Website)
+npm run build // Compiles Everything you did to create DApp and bundles it into a Production<p/>
+npm run deploy // "If using Github Deploy Pages " Add following above scripts package.json<p/>
+"homepage": "http://(Github Account Name).github.io/(Repo Name)",<p/> // Then add following to scripts<p/>
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+    <p/>
+"Remove "homepage:" if not Hosting with Github or IPNS" // Custom domains use root directory<p/>
+<p/>
+"If you don't have IPFS desktop run -ipfs daemon-" // Then open new terminal to host yourself"
+<p/>
+ipfs name resolve // Shows your currently connected CID Hash -- IPNS local hosting<p/>
+ipfs add -r build/ // This will push your Build folder to IPFS where DApp/Website is now live to see<p/>
+  "homepage": "http://TomorrowWontExist.github.io/NFTTutorial", // Github<p/>
+  "homepage": "https://gateway.ipfs.io/ipns/k51qzi5uqu5dhl0enp0dupzorbyhsmsdj1aewjbghr0se5kb1w1s65dof038g5", // IPNS/IPFS Hosting<p/>
+
+ipfs name publish (hash)
+
+"Now we know how to Deploy and Host multiple ways! If this video helped you a ton... The BEST way to support ScrawnyViking is to support his Project TBC! Buy a Bee NFT @ https://www.twe.fit and stop by everyday to play Bee-ingo for a chance to win $1000!" 
+<p/>
+Have FUN with your new collection and feel free to drop by and say Hi, or ask for assistance @ https://t.me/TBCToken

@@ -101,8 +101,8 @@ position: fixed;
   margin-bottom: 0px;
   margin-top: 200px;
   @media (min-width: 767px) {
-    width: 900px;
-    height: 300px;
+    width: 1100px;
+    height: 360px;
   }
   transition: width 0.5s;
   transition: height 0.5s;
@@ -217,7 +217,7 @@ function App() {
 
   return (
     <s.Screen style={{ backgroundColor: "var(--black)" }}>
-      <s.Container flex={1} ai={"center"} style={{ padding: 15 }}>
+      <s.Container flex={1} ai={"center"} style={{ padding: 20 }}>
         <s.TextTitle
           style={{ textAlign: "center", fontSize: 42, fontWeight: "bold" }}
         >
@@ -306,6 +306,9 @@ function App() {
           </s.Container>
         </ResponsiveWrapper>
         <s.SpacerSmall />
+        <s.TextTitle style={{ textAlign: "center", fontSize: 16 }}>
+                Mobile users must open twe.fit with MetaMask Browser
+                </s.TextTitle>
         <s.TextDescription style={{ textAlign: "center", fontSize: 20 }}>
                    <s.TextDescription style={{ textAlign: "center", fontSize: 16 }}>
                    {" "}
@@ -386,9 +389,9 @@ Click to Copy Etherscan Address | Buy Straight from Contract
                 </s.TextDescription> */}
         <s.Container jc={"top"} ai={"center"} style={{ width: "70%" }}>
         <s.SpacerLarge />
-          <ReactPlayer url='https://youtu.be/IiH9dNAmgB4'/>
+          <ReactPlayer url='https://youtu.be/IiH9dNAmgB4' style={{ width: 800, height: 200 }}/>
           <s.SpacerSmall />
-          <ReactPlayer url='https://youtu.be/HgjwmDoPNx4'/>
+          <ReactPlayer url='https://youtu.be/HgjwmDoPNx4' style={{ width: 800, height: 200 }}/>
         </s.Container>
       </s.Container>
   </s.Screen>
