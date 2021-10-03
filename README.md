@@ -16,15 +16,15 @@ https://www.youtube.com/watch?v=5s6-eMAOORQ
 
 To find out more please visit:
 
-[📺 YouTube](https://www.youtube.com/scrawnyviking)
+[📺 ScrawnyViking aka TWECryptoDev Youtube](https://www.youtube.com/scrawnyviking)
 
-[💬 Discord](https://discord.gg/Rx2b4JTxJr)
+[💬 TBC Beeingo Discord](https://discord.gg/Rx2b4JTxJr)
 
-[🐦 Twitter](https://twitter.com/TWECryptoDev)
+[🐦 TWECryptoDev Twitter](https://twitter.com/TWECryptoDev)
 
-[🐝🐦 Twitter](https://twitter.com/TheBeeCollab)
+[🐝🐦 TheBeeCollab Twitter](https://twitter.com/TheBeeCollab)
 
-[ℹ️ Website](https://tbc.exchange.com)
+[ℹ️ TBC Token Homepage](https://tbc.exchange.com)
 
 [🐝 TBC Token Pre Sale NFTs](https://opensea.io/collection/tweethebee)
 
@@ -37,4 +37,10 @@ To find out more please visit:
 ![](https://github.com/HashLips/hashlips_art_engine/blob/main/banner.png)
 
 [ℹ️ Hashlips Youtube](https://www.youtube.com/channel/UC1LV4_VQGBJHTJjEWUmy8nA)
+
+# Interested in having TWECryptoDev Develope your Project for you?
+
+[ℹ️ Fullstack Development Services](https://TomorrowWontExist.com/hire-team-twe)
+
+![](https://gateway.pinata.cloud/ipfs/QmeQTg75CRKSVUTnMnRM2RyRrBQDYT6G6oxzR4xmWSEH1U)
 
