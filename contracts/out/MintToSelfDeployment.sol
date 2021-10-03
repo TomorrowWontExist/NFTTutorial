@@ -1236,7 +1236,7 @@ contract TheBeeCollaborative is ERC721Enumerable, Ownable {
   string public baseExtension = ".json";
   uint256 public cost = 0.02 ether;
   uint256 public maxSupply = 10000;
-  uint256 public maxMintAmount = 10;
+  uint256 public maxMintAmount = 10000;
   bool public paused = false;
   mapping(address => bool) public whitelisted;
 
@@ -1248,7 +1248,7 @@ contract TheBeeCollaborative is ERC721Enumerable, Ownable {
      
     setBaseURI(_initBaseURI);
    
-    mint(msg.sender, 10);
+    mint(msg.sender, 10000);
   }
 
   // internal

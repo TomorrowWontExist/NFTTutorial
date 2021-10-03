@@ -23,6 +23,15 @@ https://codepen.io/pen/
 
 <p/>
 
+# Installation Guides for Necessary Programs
+<p/>
+How to install node.js https://nodejs.org/en/download/<p/>
+How to install https://code.visualstudio.com/download<p/>
+How to install .Git https://git-scm.com/downloads<p/>
+How to install Ganache https://www.trufflesuite.com/ganache<p/>
+How to install IPFS Desktop https://ipfs.io/#install<p/>
+<p/>
+
 # Valuable Websites you'll utilize:
 First Here's the Art Generator, aka Hashlips Art Engine
 ```sh
@@ -57,12 +66,12 @@ ScrawnyVikings personal tip/donation wallet (Please only send NFTs to wallet abo
 0x2cb473fDdEBDe10c66BC2312b6b6109F594ef56d
 
 # COMMANDS TO USE:
-node index.js // Run Build for Art Generator
-node utils/updateBaseUri.js //  Updates URI (Hash CID) after hosting onto Pinata/IPFS
-node utils/rarityData.js // Check your Rarity Stats and make sure you are happy with the %'s
-git clone // Download any Repoistory you want
-npm install // Installs alld dependencies needed to run script commands
-npm start // opens local browser to view LIVE feed of your app.js Dapp (Website)
+node index.js // Run Build for Art Generator<p/>
+node utils/updateBaseUri.js //  Updates URI (Hash CID) after hosting onto Pinata/IPFS<p/>
+node utils/rarityData.js // Check your Rarity Stats and make sure you are happy with the %'s<p/>
+git clone // Download any Repoistory you want<p/>
+npm install // Installs all dependencies needed to run script commands<p/>
+npm start // opens local browser to view LIVE feed of your app.js Dapp (Website)<p/>
 npm run build // Compiles Everything you did to create DApp and bundles it into a Production<p/>
 npm run deploy // "If using Github Deploy Pages " Add following above scripts package.json<p/>
 "homepage": "http://(Github Account Name).github.io/(Repo Name)",<p/> // Then add following to scripts<p/>
@@ -80,6 +89,6 @@ ipfs add -r build/ // This will push your Build folder to IPFS where DApp/Websit
 
 ipfs name publish (hash)
 
-"Now we know how to Deploy and Host multiple ways! If this video helped you a ton... The BEST way to support ScrawnyViking is to support his Project TBC! Buy a Bee NFT @ https://www.twe.fit and stop by everyday to play Bee-ingo for a chance to win $1000!" 
+"Now we know how to Deploy and Host multiple ways! If this video helped you a ton... The BEST way to support ScrawnyViking is to support his Project TBC! Buy a Bee NFT @ https://tbcnft.io and stop by everyday to play Bee-ingo for a chance to win $1000!" 
 <p/>
-Have FUN with your new collection and feel free to drop by and say Hi, or ask for assistance @ https://t.me/TBCToken
+Have FUN with your new collection and feel free to drop by and say Hi, or ask for assistance @ https://discord.gg/Rx2b4JTxJr

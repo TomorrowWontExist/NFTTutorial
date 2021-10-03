@@ -126,7 +126,7 @@ table {
 @font-face {
   font-family: 'Slackey-Regular';
   src: local("Slackey-Regular"),
-    url(D:\NFTTutorial\src\assets\fonts\Slackey-Regular.ttf) format("ttf");
+    url(../assets/fonts/Slackey-Regular.ttf) format("ttf");
 }
 
 body {

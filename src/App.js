@@ -99,7 +99,7 @@ height: 0px;
 center
 position: fixed;
   margin-bottom: 0px;
-  margin-top: 200px;
+  margin-top: 160px;
   @media (min-width: 767px) {
     width: 1100px;
     height: 360px;
@@ -155,7 +155,7 @@ export const Gallery = styled.div`
   }
 
   .photobanner img {
-    height: 200px;
+    height: 175px;
     margin: 0 .0em;
   }
 
@@ -231,7 +231,7 @@ function App() {
 
             >
               {data.totalSupply}/10000
-              <s.SpacerMedium/>
+              <s.SpacerSmall/>
             </s.TextTitle>
           </s.Container>
           <s.Container
@@ -389,9 +389,9 @@ Click to Copy Etherscan Address | Buy Straight from Contract
                 </s.TextDescription> */}
         <s.Container jc={"top"} ai={"center"} style={{ width: "70%" }}>
         <s.SpacerLarge />
-          <ReactPlayer url='https://youtu.be/IiH9dNAmgB4' style={{ width: 800, height: 200 }}/>
+          <ReactPlayer url='https://youtu.be/IiH9dNAmgB4'/>
           <s.SpacerSmall />
-          <ReactPlayer url='https://youtu.be/HgjwmDoPNx4' style={{ width: 800, height: 200 }}/>
+          <ReactPlayer url='https://youtu.be/HgjwmDoPNx4'/>
         </s.Container>
       </s.Container>
   </s.Screen>

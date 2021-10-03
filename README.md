@@ -1,5 +1,5 @@
 # Bee-ingo Minting Hive - Save the Bees with NFTs and win $1000 with Bee-ingo!
-"Buy your Beeingo NFT now for a chance to win $1000 @  https://www.twe.fit or https://tbc.exchange/#nft -- We'll be hosting more than 200 Bee-ingo Events! 50% of Proceeds go towards Charity and TBC Token Liquidity/BuyBacks for insane growth! We're Pairing The Bee Collaborative Charity / Rewards Token with a 10k Bee-ingo NFT Game! Token Holders will receive 10% ETH reflections on all sells!"
+"Buy your Beeingo NFT now for a chance to win $1000 @  https://tbcnft.io or https://tbc.exchange/#nft -- We'll be hosting more than 200 Bee-ingo Events! 50% of Proceeds go towards Charity and TBC Token Liquidity/BuyBacks for insane growth! We're Pairing The Bee Collaborative Charity / Rewards Token with a 10k Bee-ingo NFT Game! Token Holders will receive 10% ETH reflections on all sells!"
 
 ***ALL COMING VERY SOON***
 
@@ -16,19 +16,21 @@ https://www.youtube.com/watch?v=5s6-eMAOORQ
 
 To find out more please visit:
 
-[📺 YouTube](https://www.youtube.com/channel/UCesmc1HdFKXqmNFZwT0M9GQ)
+[📺 YouTube](https://www.youtube.com/scrawnyviking)
 
-[💬 Telegram](https://t.me/TBCToken)
+[💬 Discord](https://discord.gg/Rx2b4JTxJr)
 
 [🐦 Twitter](https://twitter.com/TWECryptoDev)
 
-[ℹ️ Website](https://TBC.exchange.com)
+[🐝🐦 Twitter](https://twitter.com/TheBeeCollab)
+
+[ℹ️ Website](https://tbc.exchange.com)
 
 [🐝 TBC Token Pre Sale NFTs](https://opensea.io/collection/tweethebee)
 
 ![](https://gateway.pinata.cloud/ipfs/QmZ4rJo6eR4xkxCT8Ck62TnjUnh7B4raZtZ24GYZcmWp9A)
 
-[🐝 TBC NFT Bee-ingo Minting Hive](https://www.twe.fit/)<p/>
+[🐝 TBC NFT Bee-ingo Minting Hive](https://tbcnft.io/)<p/>
 
 # ScrawnyViking A-Z How to Launch your own NFT Collection using HashLips Art Engine 🔥
 

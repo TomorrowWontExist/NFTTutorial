@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: GPL-3.0 // DO NOT USE THIS AS YOUR CONTRACT
+// SPDX-License-Identifier: GPL-3.0 // DO NOT USE THIS AS YOUR CONTRACT IN SOLIDITY
 pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/token/ERC721/extensions/ERC721Enumerable.sol";
